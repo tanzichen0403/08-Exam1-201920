@@ -3,7 +3,7 @@ Exam 1, problem 4.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and Zichen Tan.
+         and Hongyu Liu.
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -75,6 +75,18 @@ def problem4(number_of_stairs, step_size, starting_point, window):
     # -------------------------------------------------------------------------
     m=number_of_stairs
     starting_point.attach_to(window)
+    # p1=rg.Point(0,0)
+    # p2=rg.Point(0,450)
+    # p3=rg.Point(400,0)
+    # p4=rg.Point(400,450)
+    # linea=rg.Line(p1,p2)
+    # lineb = rg.Line(p1,p3)
+    # linec = rg.Line(p3,p4)
+    # lined = rg.Line(p2,p4)
+    # linea.attach_to(window)
+    # lineb.attach_to(window)
+    # linec.attach_to(window)
+    # lined.attach_to(window)
     for k in range(m):
         point1 = rg.Point(starting_point.x + k * step_size, starting_point.y - k * step_size)
         point2 = rg.Point(point1.x, point1.y - step_size)
